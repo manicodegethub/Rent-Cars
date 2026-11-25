@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand: #facc15;
+  --color-brand-dark: #eab308;
+  --color-ink: #0a0a0a;
+  --color-surface: #171717;
+  --color-line: #262626;
+    --color-primary: #ffc727;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
